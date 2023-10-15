@@ -1,0 +1,458 @@
+.center-image,
+.centered-text {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rice-blue-text {
+  text-align: center;
+  color: #001489;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 125px;
+}
+
+/* Reset some default styles and apply a base font size */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'EB Garamond', serif;
+}
+
+/* Font styles */
+.font {
+  font-size: 36px;
+  font-weight: bold;
+  color: #221559;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #221559;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Animation styles */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+.image-container img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+  
+@media (max-width: 768px) {
+  .page-content {
+      grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+
+
+
+:root {
+  --primary-color: #9fddf9;
+  --secondary-color: #767676;
+  --background-color-index: #9fddf9;
+  --background-color-test: #9fddf9;
+  --background-color-applications: #9fddf9;
+  --background-color-algorithm: #9fddf9;
+  --background-color-intro: #9fddf9;
+}
+body {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-container {
+  text-align: center; /* Center the banner image horizontally */
+  padding: 0; /* Add some spacing around the banner */
+  margin-top: -20px;
+}
+
+.banner-image {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+.navbar-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.navbar {
+  /*background-color: #221559;*/
+  padding: 10px 0; /* Slightly thicker padding */
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  margin: 0 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #0A509E;
+  font-weight: 600;
+  transition: color 0.3s;
+  padding: 8px 15px; /* Adjust padding for more comfortable spacing */
+  border-radius: 5px; /* Rounded corners for a nicer look */
+}
+.navbar a:hover {
+  color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+}
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+.hero p {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('hero-image.jpg') center/cover no-repeat;
+  font-size: 48px; /* Adjusted size for responsiveness */
+  margin-bottom: 10px; /* Smaller margin for compactness */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.quote {
+  font-size: 18px;
+  color: #777;
+  margin-top: 10px;
+}
+.centered-text {
+  text-align: center;
+}
+.content-section {
+  font-size: 20px;
+  color: #333;
+  margin: 50px auto;
+  max-width: 1000px; /* Increased max-width for larger screens */
+  position: relative;
+  z-index: 1;
+  padding: 60px 0; /* Increase vertical padding for better separation */
+  background-color: #f8f8f8; /* Add a subtle background color */
+  border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 0; /* Increased padding for better separation */
+  background-color: #f0f0f0;
+}
+
+.footer p {
+  font-size: 16px; /* Slightly smaller font size for the footer text */
+}
+
+
+body.index-page {
+  background-image: linear-gradient(to bottom, #9fddf9, var(--background-color-index), #9fddf9);
+}
+
+body.test-page {
+  background-image: linear-gradient(to bottom, #9fddf9, var(--background-color-test), #9fddf9);
+}
+
+body.applications-page {
+  background-image: linear-gradient(to bottom, #9fddf9, var(--background-color-applications), #9fddf9);
+}
+
+body.algorithm-page {
+  background-image: linear-gradient(to bottom, #9fddf9, var(--background-color-algorithm), #9fddf9);
+}
+
+body.intro-page {
+  background-image: linear-gradient(to bottom, #9fddf9, var(--background-color-intro), #9fddf9);
+}
+
+.custom-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+.hero {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-left: 25px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  transform: translateY(100%);
+  bottom: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul li a:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Centering and Animations */
+.center-image,
+.centered-text {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s forwards, bounce 1s ease-in-out 0.5s alternate;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+/* Specific Page Styles */
+.rice-blue-text {
+  position: relative;
+  color: #001489;
+}
+
+.rice-blue-text::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #001489;
+  bottom: -5px;
+  left: 0;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background-color: #001489;
+  margin: 20px auto;
+}
+
+
+
+
+/* Buttons */
+.custom-button {
+  background-color: #001489;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #0037A6;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 223, 249, 0.5); /* Add custom focus highlight */
+}
+
+
+
+/* Styled button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9fddf9; /* Light blue background */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #6ca1d7; /* Slightly darker blue on hover */
+}
+
+
+/* Content Animation */
+/* Example for spacing and alignment */
+.page-content {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Center elements within a container */
+.centered-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  /* Styles for smaller screens */
+  .navbar ul {
+    flex-direction: column;
+    /* ... other adjustments ... */
+  }
+}
+
+.centered-element {
+  /* ... existing styles ... */
+  animation: fadeSlideIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,
+    bounce 1s ease-in-out 0.5s alternate;
+}
+
+/* Improved section titles */
+/* Example for section titles */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #001489;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f0f0f0; /* Background color for contrast */
+  padding: 10px 0;
+}
+
+
+
+.animation-fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards, bounce 1s ease-in-out 0.5s alternate;
+}
+
+/* Example for the divider */
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #001489;
+  margin: 20px 0;
+}
+
+
+/* Adjustments for mobile devices */
+/* Example for responsive font sizes */
+@media (max-width: 768px) {
+  .font {
+    font-size: 5vw; /* Responsive font size for mobile */
+  }
+  .centered-text {
+    font-size: 6vw; /* Responsive font size for mobile */
+  }
+  .banner-image {
+    height: auto;
+    max-width: 100%;
+  }
+  .image-container img {
+    width: 80%; /* Adjusted image width for mobile */
+  }
+}
